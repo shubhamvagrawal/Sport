@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="shubh.sport">
+
+   <uses-permission android:name="android.permission.INTERNET" > </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity" android:theme="@style/AppTheme3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"   />
+        <activity android:name=".AboutUs"   />
+
+        <activity android:name=".Golds.HomeScreen" android:theme="@style/DarkTheme"/>
+        <activity android:name=".Golds.Settings" />
+        <activity android:name=".Golds.WorkoutLog" />
+        <activity android:name=".Golds.MealLog" />
+        <activity android:name=".Golds.ViewProgress" />
+        <activity android:name=".Golds.ViewWorkouts" />
+        <activity android:name=".Golds.ViewNutrition" />
+        <activity android:name=".Golds.ShowMeals" />
+        <activity android:name=".Golds.ShowExercises" />
+        <activity android:name=".Golds.Quiz" />
+        <activity android:name=".Golds.QuizResults" />
+        <activity android:name=".Golds.DayOverview" />
+        <activity android:name=".Golds.UserInfo" />
+        <activity android:name=".Golds.UpdateUserInfo"></activity>
+        <activity android:name=".Golds.TakeQuiz"></activity>
+
+        <activity android:name=".Sports.EventActivity"  android:theme="@style/AppTheme3" />
+        <activity android:name=".Social.Social_Register" android:theme="@style/AppTheme3" />
+        <activity android:name=".Social.Social_Login" android:theme="@style/AppTheme3"/>
+        <activity android:name=".Social.Social_Timeline" android:theme="@style/AppTheme3"/>
+        <activity android:name=".Social.Social_PostImage" android:theme="@style/AppTheme"  />
+        <activity android:name=".Social.SingleInstaActivity" android:theme="@style/AppTheme3"/>
+
+        <activity android:name=".Player.PlayerActivity" android:theme="@style/AppTheme3"/>
+
+        <activity android:name=".BMI.bmi" />
+        <activity android:name=".StepsCounter.Steps" />
+
+
+        <activity android:name=".Ministry.NM" />
+        <activity android:name=".Ministry.SAI"/>
+        <activity android:name=".Ministry.SM"/>
+        <activity android:name=".Ministry.schemes"/>
+
+        <activity android:name=".Water.MainWindow.MainActivity" />
+        <activity android:name=".Water.WaterDrankHistory.DateLogActivity" />
+        <activity android:name=".Water.WaterDrankHistory.TimeLogActivity" />
+        <activity android:name=".Water.Settings.SettingsActivity" />
+
+        <receiver android:name=".Water.Notifications.NotificationReciever" />
+        <receiver android:name=".Water.BroadcastReceivers.DateLogBroadcastReceiver" />
+        <receiver android:name=".Water.BroadcastReceivers.StopNotificationBroadcastReceiver" />
+
+        <activity android:name=".Water.Chart.ChartActivity"   android:background="@color/blue" />
+
+
+        <receiver
+            android:name=".Water.BroadcastReceivers.BootBroadcastReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Water.Widget.WidgetProvider">
+
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <service
+            android:name=".Water.Widget.UpdateWidgetService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+
+
+
+        <activity android:name=".Channels.c0" />
+        <activity android:name=".Channels.c1" />
+        <activity android:name=".Channels.c2" />
+        <activity android:name=".Channels.c3" />
+        <activity android:name=".Channels.c4" />
+        <activity android:name=".Channels.c5" />
+        <activity android:name=".Channels.c6" />
+        <activity android:name=".Channels.c7" />
+        <activity android:name=".Channels.c8" />
+
+
+    </application>
+</manifest>

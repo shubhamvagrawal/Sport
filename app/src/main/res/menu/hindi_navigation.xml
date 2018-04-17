@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tools"
+        android:icon="@drawable/ic_tools"
+        android:title="टूल्स" />
+
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/ic_dashboard"
+        android:title="समाचार" />
+
+    <item
+        android:id="@+id/training"
+        android:icon="@drawable/ic_run"
+        android:title="खेल" />
+
+    <item
+        android:id="@+id/item"
+        android:icon="@drawable/ic_ministry"
+        android:title="मंत्रालय" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_leaderboard"
+        android:title="लीडरबोर्ड" />
+
+</menu>

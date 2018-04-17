@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/goldsbg"
+        android:scaleType="centerCrop" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/loginemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="#80000000"
+        android:fontFamily="@font/productsans"
+        android:hint="Enter Email"
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:textColorHint="@color/colorAccent" />
+
+
+    <EditText
+        android:id="@+id/loginpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#80000000"
+        android:fontFamily="@font/productsans"
+        android:hint="Enter Password"
+        android:padding="15dp"
+        android:textColor="#fff"
+        android:textColorHint="@color/colorAccent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+
+
+        android:progressDrawable="@drawable/shhh"
+        android:visibility="visible"
+        tools:visibility="visible" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:background="#80000000"
+        android:fontFamily="@font/productsans"
+        android:onClick="loginButtononClick"
+        android:text="SIGN IN"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+</LinearLayout>
+    </FrameLayout>

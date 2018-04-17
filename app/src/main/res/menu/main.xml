@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/signin"
+        android:title="Sign In" />
+
+    <item
+        android:id="@+id/register"
+        android:title="Register" />
+
+    <item
+        android:id="@+id/Update"
+        android:title="Update" />
+
+    <item
+        android:id="@+id/aboutus"
+        android:title="About" />
+
+    <item
+        android:id="@+id/exit"
+        android:title="Exit" />
+
+</menu>

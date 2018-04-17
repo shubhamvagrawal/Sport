@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/tools"
+        android:icon="@drawable/ic_tools"
+        android:title="Tools" />
+
+    <item
+        android:id="@+id/news"
+        android:icon="@drawable/ic_dashboard"
+        android:title="News" />
+
+    <item
+        android:id="@+id/training"
+        android:icon="@drawable/ic_run"
+        android:title="Sports" />
+
+    <item
+        android:id="@+id/item"
+        android:icon="@drawable/ic_ministry"
+        android:title="Ministry" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_leaderboard"
+        android:title="Leaderboard" />
+
+</menu>
